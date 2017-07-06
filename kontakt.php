@@ -97,12 +97,12 @@ if (isset($_POST['send']) and isset($_SESSION['email']))
 
 if (!isset($_SESSION['email']))
 {
-	/* echo " <script>
+	 echo " <script>
                     document.getElementById('btnContactUs').disabled=true;
                     alert('Make sure your are signed in');
                     setTimeout(\"location.href = 'http://localhost/e5/index.php';\",1500);
               </script>";
-			   */
+			  
 }
 else 
 	
