@@ -7,16 +7,16 @@ Web prezentacija egsoticnih automobila
 
 
 Files:
-futer_user
-heder_user
-login
-odjava
-registracija
-verijikacija 
+futer_user,
+heder_user,
+login,
+odjava,
+registracija,
+verijikacija, 
 
 se nalaze u folderu pod imenom user
 
-class_Logs 
+class_Logs, 
 function:
 se nalaze u folderu funkcije_i_klase
 
