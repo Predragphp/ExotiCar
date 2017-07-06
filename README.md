@@ -1,29 +1,30 @@
+
+### Working version
+
 # ExotiCar
-# Zavrsni Projekat IT-Akademija
+# Final Project IT Academy
 
-Web prezentacija egsoticnih automobila
-
+Web presentation of egzotic cars
 
 
 Files:
-futer_user
-heser_user
-login
-odjava
-registracija
-verijikacija 
+Futer_user,
+Heder_user,
+log in,
+sign out,
+Registration,
+Verification,
 
-se nalaze u folderu pot imenom user
+Are located in the folder named user
 
-class_Logs 
-function
+Class_Logs,
+Function:
+Are located in the function_and_class folder
 
-se nalaze u folderu funkcije_i_klase
+Style:
+Is located in the css folder
 
-style 
+Main:
+Is located in the js folder
 
-u folderu css
-
-main
-
-u folderu js
+Pictures of brand banners and cars are placed in the folder img in the subfolder for the appropriate image banner in the banner folder brand in the brand folder and cars are in the car folder with subfolders with the nayiv of each brand
