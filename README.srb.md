@@ -1,3 +1,5 @@
+### Radna Verzija
+
 # ExotiCar
 # Zavrsni Projekat IT-Akademija
 
@@ -6,7 +8,7 @@ Web prezentacija egsoticnih automobila
 
 Files:
 futer_user
-heser_user
+heder_user
 login
 odjava
 registracija
