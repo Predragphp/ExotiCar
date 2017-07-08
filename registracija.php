@@ -84,15 +84,15 @@ if(isset($_POST['submit']))
 
         $red = @mysqli_fetch_object($rez);
         $dupE = @$red->email;
-        echo ' if submit ';
+       
     if (strlen($name) !== "" AND strlen($email) !== "" AND $email != $dupE AND strlen($password) !== "")
     {
-        echo " if  $password.$so";
+        
         if(preg_match("/[a-z]/", $password) AND preg_match("/[A-Z]/", $password) AND preg_match("/\d/", $password) AND !preg_match("/[^a-zA-Z0-9\-\/]/", $password))
         {
             
             $sql = "INSERT INTO user (name, email, pass, potvrda) VALUES ('$name', '$email', password('$password.$so'), '$potvrda') ";
-				echo ' if sql ';
+				
             if (mysqli_query($db, $sql))
                 $to=$email;
             $subject ='Potvrdite registraciju';
