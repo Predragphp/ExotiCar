@@ -23,7 +23,7 @@ heder.php,
 index.php,
 kontakt.php,
 
-se nalaze u folderu e5 koji se nalaci u wamp root-u www
+Se nalaze u folderu e5 koji se nalaci u wamp root-u www
 
 Fajlovi:
 futer_user,
@@ -35,7 +35,7 @@ verijikacija,
 panelB,
 panelC
 
-se nalaze u folderu pod imenom user
+Se nalaze u folderu pod imenom user
 
 class_Logs, 
 function:
@@ -47,11 +47,11 @@ se nalazi u folderu css
 main:
 se nalazi u folderu js
 
-slike brenda banera i automobila se naleze u folderu img pa u podfolderu za odgovarajucu sliku baner u baner folderu brend u brend folderu i automobili su u car folderu sa podfolderima sa nazivom svakog brenda
+Slike brenda banera i automobila se naleze u folderu img pa u podfolderu za odgovarajucu sliku baner u baner folderu brend u brend folderu i automobili su u car folderu sa podfolderima sa nazivom svakog brenda
 
 Sve forme na sajtu su radjene u bootstrap-u isto kao i ram za slike 
 
-php je koriscen za proveru podataka a ispisano i javacript-u iz php-a
+PHP je koriscen za proveru podataka a ispisano i javacript-u iz php-a
 jedan primer provere 
 
              if(!preg_match("/[a-z]/", $password))
@@ -63,11 +63,22 @@ jedan primer provere
                      </script>";
            }
 
-javascript kontrolise baner 
+Javascript kontrolise baner 
 
-ostale slike su ispisane putem php-a
+Ostale slike su ispisane putem php-a
 
-ajax sluzi za prikaz odredjenih automobila preko slike brenda na pocetnoj strani index.php
+Ajax sluzi za prikaz odredjenih automobila preko slike brenda na pocetnoj strani index.php
+ajax 
+
+      <script>
+        $(document).ready(function(){
+            $(".imgbrend").click(function(){
+                $.get("ajax.php?strana="+$(this).attr('strana'), function(odgovor){
+                    $("#odgovor").html(odgovor);
+                });
+            });
+        });
+    </script>
 
 JQuery kontrolise proveru tokom registracije putem regx-a
 
@@ -120,3 +131,15 @@ JQuery kontrolise proveru tokom registracije putem regx-a
         $('#pswd_info').hide();
     });
     });
+
+Fajl class_Logs se koristi za logovanje ko je doso na stranicu registracija i preko kog ip-ja i za logovanje uspesnih ili neuspesnih prijava
+
+Prilikom registracije salje se mail sa linkom za verifikaciju istog na strani verifikacija vrsi update na bazu users i potvrdjuje da je email validan
+ 
+Fajl function ima 2 funkcije u sebi prijavu na bazu i zabelezivanje ip-a korisnika i ipv4 formatu
+
+Fajl panelB sluzi za dodavanje slika novih prendova
+
+Fajl panelC sluzi za upisivanje novih automobila u bazi podataka kao i dodavanje slika za taj automobil
+
+Fajl kontakt je kontakt forma koja omugucije slanje mejla
