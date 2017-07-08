@@ -1,7 +1,7 @@
-### Radna Verzija
+# Radna Verzija
 
-# ExotiCar
-# Zavrsni Projekat IT-Akademija
+## ExotiCar
+### Zavrsni Projekat IT-Akademija
 
 Web prezentacija egsoticnih automobila
 
@@ -15,13 +15,25 @@ JQuery 3.2.1
 Ajax
 Bootstrap 3.3.7
 
-Files:
+Fajlovi:
+ajax.php,
+AllCars.php,
+futer.html,
+heder.php,
+index.php,
+kontakt.php,
+
+se nalaze u folderu e5 koji se nalaci u wamp root-u www
+
+Fajlovi:
 futer_user,
 heder_user,
-login,
+prijava,
 odjava,
 registracija,
-verijikacija, 
+verijikacija,
+panelB,
+panelC
 
 se nalaze u folderu pod imenom user
 
@@ -40,9 +52,71 @@ slike brenda banera i automobila se naleze u folderu img pa u podfolderu za odgo
 Sve forme na sajtu su radjene u bootstrap-u isto kao i ram za slike 
 
 php je koriscen za proveru podataka a ispisano i javacript-u iz php-a
+jedan primer provere 
 
-javascript vrsi proveru registracije pomocu regx-sa i kontrolise baner 
+             if(!preg_match("/[a-z]/", $password))
+             {
+                echo "<script>
+
+                    alert('Your password must contains at least one letter');
+                    
+                     </script>";
+           }
+
+javascript kontrolise baner 
 
 ostale slike su ispisane putem php-a
 
 ajax sluzi za prikaz odredjenih automobila preko slike brenda na pocetnoj strani index.php
+
+JQuery kontrolise proveru tokom registracije putem regx-a
+
+
+        $(document).ready(function(){
+        
+        $('input[type=password]').keyup(function() {
+        var pswd = $(this).val();
+
+        //validate letter
+        if ( pswd.match(/[a-z]/) ) {
+            $('#letter').removeClass('invalid').addClass('valid');
+            document.getElementById('submit').disabled=false;
+        } else {
+            $('#letter').removeClass('valid').addClass('invalid');
+            document.getElementById('submit').disabled=true;
+        }
+
+
+        //validate capital letter
+        if ( pswd.match(/[A-Z]/) ) {
+            $('#capital').removeClass('invalid').addClass('valid');
+            document.getElementById('submit').disabled=false;
+        } else {
+            $('#capital').removeClass('valid').addClass('invalid');
+            document.getElementById('submit').disabled=true;
+        }
+
+        //validate number
+        if ( pswd.match(/\d/) ) {
+            $('#number').removeClass('invalid').addClass('valid');
+            document.getElementById('submit').disabled=false;
+        } else {
+            $('#number').removeClass('valid').addClass('invalid');
+            document.getElementById('submit').disabled=true;
+        }
+
+        //validate space
+        if ( !pswd.match(/[^a-zA-Z0-9\-\/]/) ) {
+            $('#space').addClass('valid').removeClass('invalid');
+            document.getElementById('submit').disabled=false;
+        } else {
+            $('#space').removeClass('valid').addClass('invalid');
+            document.getElementById('submit').disabled=true;
+        }
+
+    }).focus(function() {
+        $('#pswd_info').show();
+    }).blur(function() {
+        $('#pswd_info').hide();
+    });
+    });
