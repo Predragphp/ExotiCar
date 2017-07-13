@@ -63,7 +63,7 @@ $vreme=date("F j, Y, g:i a");
 include('../funkcija_i_klasa/function.php');
 include('../funkcija_i_klasa/class_Logs.php');
 $ip=getrealip();
-$obj=new Logs("Dolazak na stranicu REGISTRACIJA od strane $ip u vreme $vreme\r\n\r\n\r\n\r\n");
+$obj=new Logs("Dolazak na stranicu REGISTRACIJA od strane $ip u vreme $vreme\r\n\r\n");
 $obj->dodajLog();
 $db=db();
 
