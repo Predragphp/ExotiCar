@@ -284,7 +284,7 @@ JQuery kontrolise proveru lozinke:
 
 Datoteka class_Logs se koristi za ispisivanje dolazaka na stranicu registracije i preko koje ip i za prijavljivanje uspešnih ili neuspješnih prijava.
 
-Prilikom registracije salje se emal za verifikaciju.
+Prilikom registracije salje se email  verifikacija se salje u bazu podataka korisnika i potvrdjuje da je e-pošta validna.
  
 Funkcija datoteke ima samo 2 funkcije za prijavljivanje na bazu podataka i snimanje ip korisnika u ipv4 formatu.
 
