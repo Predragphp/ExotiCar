@@ -268,7 +268,7 @@ JQuery controls the check of input password in registration:
     });
     
 
-The class_Logs file is used to log on to the registration page and through which ip and to report successful or unsuccessful signups.
+The class_Logs file is used to log arrival on registration page and through which ip, and to report successful or unsuccessful signups.
 
 When registering, a mail with a link for verification of the verification page is sent to the user database and confirms that the email is valid.
  
