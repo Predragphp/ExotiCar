@@ -103,25 +103,41 @@ Bentley:
 Bugatti:
 
   slika0.jpg,
+  
   slika1.jpg,
+  
   slika2.jpg,
+  
   slika3.jpg,
+  
   slika4.jpg,
+  
   slika5.jpg,
+  
   slika6.jpg,
+  
   slika7.jpg,
+  
   slika8.jpg,
+  
   slika9.jpg,
+  
   slika10.jpg,
+  
   slika11.jpg,
   
 Lamborghini:
 
   slika0.jpg,
+  
   slika1.jpg,
+  
   slika2.jpg,
+  
   slika3.jpg,
+  
   slika4.jpg,
+  
   slika5.jpg,
   
 McLaren:
@@ -136,26 +152,41 @@ McLaren:
 Porsche:
 
   slika1.jpg,
+ 
   slika2.jpg,
+ 
   slika3.jpg,
+ 
   slika4.jpg,
+ 
   slika5.jpg,
+ 
   slika6.jpg
   
 Rolls-Royce:
 
   slika0.jpg,
+  
   slika1.jpg,
+  
   slika2.jpg,
+  
   slika3.jpg,
+  
   slika4.jpg,
+  
   slika5.jpg,
+  
   slika6.jpg,
+  
   slika7.jpg,
+  
   slika8.jpg,
+  
   slika9.jpg,
   
-PHP is used for checking data and printed with javascript from php
+PHP is used for checking data and printed with javascript from php.
+
 One example of a check:
 
         if(!preg_match("/[a-z]/", $password))
@@ -168,9 +199,11 @@ One example of a check:
            }
            
 Javascript controls the baner(banner).
+
 Other images are printed using php from a database.
 
 Ajax serves to display specific cars through the image of the brand on the index.php home page.
+
 Ajax:
          <script>
         $(document).ready(function(){
