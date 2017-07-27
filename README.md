@@ -17,6 +17,7 @@ Tehnology used to make site is:
 placment of file is:
 
 root file is e5 whit:
+
   ajax.php,
   AllCars.php,
   futer.html,
@@ -27,6 +28,7 @@ root file is e5 whit:
 sub folders:
 
 user whit:
+
   futer_user,
   heder_user,
   prijava,
@@ -38,41 +40,68 @@ user whit:
   panelC,
   
 funkcije_i_klase(functions_and_class) whit:
+
   class_Logs, 
   function,
   
 js(JavaScript) whit:
+
   main.js,
  
 css:
+
   style.css
   
 img(images) whit: 
+
    logo.png
+   
 sub folders:
  
 baner(banner) whit:
+
   slika0.jpg,
+  
   slika1.jpg,
+  
   slika2.jpg,
+  
   slika3.jpg,
+  
 brend(brand) whit:
+
   slika0.png,
+  
   slika1.png,
+  
   slika2.png,
+  
   slika3.png,
+  
   slika4.png,
+  
   slika5.png,
+  
 cars whit:
+
 sub folders:
+
 Bentley:
+
   slika0.jpg,
+  
   slika1.jpg,
+  
   slika2.jpg,
+  
   slika3.jpg,
+  
   slika4.jpg,
+  
   slika5.jpg,
+  
 Bugatti:
+
   slika0.jpg,
   slika1.jpg,
   slika2.jpg,
@@ -85,28 +114,36 @@ Bugatti:
   slika9.jpg,
   slika10.jpg,
   slika11.jpg,
+  
 Lamborghini:
+
   slika0.jpg,
   slika1.jpg,
   slika2.jpg,
   slika3.jpg,
   slika4.jpg,
   slika5.jpg,
+  
 McLaren:
+
   slika0.jpg,
   slika1.jpg,
   slika2.jpg,
   slika3.jpg,
   slika4.jpg,
   slika5.jpg,
+  
 Porsche:
+
   slika1.jpg,
   slika2.jpg,
   slika3.jpg,
   slika4.jpg,
   slika5.jpg,
   slika6.jpg
+  
 Rolls-Royce:
+
   slika0.jpg,
   slika1.jpg,
   slika2.jpg,
